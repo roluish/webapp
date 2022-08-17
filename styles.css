@@ -1,0 +1,130 @@
+ /* Base reset */
+ * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  /* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+  /* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+  /* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  /* base style */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:  rgb(95, 92, 92);
+}
+
+/* navigator */
+
+#header {
+    display:flex;
+    font-size: 3vh;
+    justify-content: space-between;
+    width: 79%;
+    align-items:center;
+    margin: 10px auto;
+}
+
+.navigator {
+
+}
+
+.navigator-list {
+    display: flex;   
+}
+
+.navigator-list li {
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+#account {
+    margin-left: 50px;
+    padding: 0px ;
+    color: rgb(247, 172, 10) ;
+    
+}
+
+.navigator-list a:hover {
+    color: rgb(247, 172, 10) ;
+}
+
+/* header */
+
+.header {
+    display: inline;
+    
+    margin-left: 50px;
+
+}
+
+
+
+#hero {
+    height:fit-content ;
+    background-image: url("App Development Folder/Hero Components/Hero Visual.png");
+    width: 100%;
+    
+}
+
+.details {
+    max-width: 50em;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding: 50px 0 30px 70px;
+}
+.details p {
+    font-size: 20px;
+    padding: 30px 0;
+}
+.details h1 {
+    color:rgb(247, 172, 10);
+    font-size: 6rem;
+}
+
+.coverage {
+    width:300px;
+    background-image: url('App Development Folder/Hero Components/Coverage Banner.png');
+
+
+}
